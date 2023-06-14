@@ -14,7 +14,7 @@ class myThreadRunnerGreedy extends Thread {
 
     @Override
     public void run(){
-        contador.contador+=this.i;
+        for(int j=0;j<i;j++) this.contador.contador+=1;
     }
 }
 
@@ -90,7 +90,7 @@ class Main{
         System.out.println("Método normal: "+contador.toString());
         //parece que o contador normal acabar por ter resultados não expectaveis
         //para n=1000 e i=1000 temos que 
-        //Método greedy: Valor no contador: 1000000
-        //Método normal: Valor no contador: 975086
+        //Método greedy: Valor no contador: 997524
+        //Método normal: Valor no contador: 988113
     }
 }
